@@ -4,7 +4,7 @@ const h2 = document.querySelector(".color");
 const btn = document.querySelector(".btn");
 const body = document.getElementsByTagName("body");
 
-btn.addEventListener("click", function (e) {
+btn.addEventListener("click", function () {
   const randomNum = Math.floor(Math.random() * colors.length);
   h2.textContent = colors[randomNum];
   body[0].style.background = h2.textContent;
